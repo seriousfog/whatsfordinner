@@ -1,5 +1,5 @@
 const {Restaurant} = require('../models')
-const categories = ['Italian', 'Fast Food'];
+const categories = ['Fast Food', 'Fast Food'];
 module.exports.viewAll = async function(req, res, next) {
     const restaurants = await Restaurant.findAll();
     res.render('index', {restaurants});
@@ -34,11 +34,11 @@ module.exports.updateRestaurant = async function(req, res) {
 module.exports.deleteRestaurant = async function (req, res) {
     await Restaurant.destroy(
         {
-            where:
-                {
-                    id: req.params.id
-                }
-        });
+        where:
+        {
+            id: req.params.id
+        }
+    });
     res.redirect('/');
 }
 
