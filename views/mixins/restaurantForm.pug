@@ -13,7 +13,7 @@ mixin restaurantForm(restaurant, actionURL, mode, title)
                             option(value=category selected = (category ===restaurant.category)) #{category}
                             div.form-input
                                 label(for='rating') Rating
-                                select(id='rating' autocomplete='off')
+                                select(id='rating' name='rating' autocomplete='off')
                                     -for(let i = 1; i<= 5; i++)
                                         option(value=i selected = (rating === restaurant.rating)) #{i}
                             div.form-input
