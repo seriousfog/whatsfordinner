@@ -9,6 +9,7 @@ body {
   padding: 48px;
   display: flex;
   gap: 16px;
+  flex-wrap:wrap;
 }
 
 .card {
@@ -83,5 +84,40 @@ body {
 }
 
 .description{
-  margin-top:16px;
+  margin-top: 16px;
+}
+
+.button{
+  display: block;
+  border-radius: 6px;
+  padding: 8px 16px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 8px 1px 2px 0px;
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+
+.button.save {
+  background: #155E75;
+  color: white;
+  border: 1px solid #164E63;
+  height: 40px;
+}
+
+.add-button-row{
+  display: flex;
+  justify-content: flex-start;
+}
+
+img.file{
+  height: 300px;
+  width: 2400px;
+  justify-content: center;
+}
+
+.main-header{
+  background: #242323;
+  width: 100%;
+  disply: flex;
+  justify-content: center;
 }
